@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommender - Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Conversion Recommender </h1>
+        </div>
+        <div class="row">
+            <div class="banner">
+                <h1>We are your one stop  Recommendation System </h1>
+            </div>
+            <div class="column">
+                <h2>Results 📊</h2>
+              
+                <h2>The recommendation is: {{ prediction }}</h2>
+               
+                <form action="{{ url_for('home') }}">
+                    <button type="submit">Try again</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
